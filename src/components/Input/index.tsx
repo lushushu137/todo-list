@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import './index.css'
 
 export interface InputProps {
@@ -18,6 +18,10 @@ export const Input = (props: InputProps) => {
         }
     }
     const submit = () => {
+        if (content.length === 0) {
+            return;
+        }
+        setContent('')
         props.handleSubmit(content)
     }
     return ( 
@@ -25,7 +29,7 @@ export const Input = (props: InputProps) => {
             <input 
                 type="text" 
                 value={content}
-                placeholder="今天要做点什么呢" 
+                placeholder="What do we do today?" 
                 onKeyDown={(e) => handleKeyDown(e)}
                 onChange={(e) => handleChange(e)}
                 />
