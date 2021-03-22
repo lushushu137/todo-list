@@ -1,0 +1,56 @@
+.container, .container-isChecked{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(244, 244, 244);
+    margin:10px auto;
+    overflow: hidden;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-isChecked{
+    background-color: rgb(215, 215, 215);
+}
+
+.checkBox, .checkBox-isChecked{
+    margin: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px;
+}
+
+
+.checkBox-isChecked{
+    color:grey;
+}
+
+.delete, .delete-isChecked{
+    margin: 18px;
+    float: right;
+    font-size: 12px;
+    font-weight: bolder;
+    color: lightcoral;   
+}
+
+.delete-isChecked{
+    color:grey;
+}
+
+.content .content-isChecked{
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    display: inline;
+
+}
+.content-isChecked{
+    text-decoration-line: line-through;
+
+}
+
+
+
