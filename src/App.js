@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import InputBox from './components/InputBox/InputBox'
+import ItemList from './components/ItemList/ItemList'
 import './App.css';
+import pic from "./head.png"
+import { Router, Route, Link } from 'react-router-dom'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <img src={pic} />
+     <h1>Todo List</h1>
+     <InputBox/>
+    </div> 
   );
 }
 

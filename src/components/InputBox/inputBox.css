@@ -1,0 +1,16 @@
+input{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+
+}
+
+button{
+    width: 60px;
+    height: 35px;
+    background-color: lightsalmon;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
